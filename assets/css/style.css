@@ -1,0 +1,823 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Marcellus SC', serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding-top: 70px;
+}
+
+header .logo img {
+    max-width: 100%;    
+    height: auto;     
+    display: block;   
+    border-radius: 50%;  
+
+
+}
+
+header .logo {
+    width: 40px;       
+    height: 40px;      
+    overflow: hidden; 
+}
+
+
+
+:target {
+    padding-top: 60px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    gap: 35px;
+    transform: translateX(-40px);
+}
+
+header nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #00bcd4;
+}
+
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.logo-core {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo-core img {
+    width: 150px; /* Điều chỉnh kích thước logo theo ý muốn */
+    height: auto; /* Giữ tỷ lệ ảnh */
+    border-radius: 20px; /* Bo tròn góc nếu cần */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng nhẹ */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-core img:hover {
+    transform: scale(1.05); /* Hiệu ứng phóng to nhẹ khi hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.social-icons a {
+    font-size: 40px;
+    margin-right: 15px 
+}
+
+.social-icons {
+    gap: 15px;
+    bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        display: block;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+        height: 40px;
+    }
+
+    .hamburger {
+        display: block;
+        right: 40px;
+    }
+
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        width: 90%;
+        background-color: #333;
+        padding: 10px;
+        border-radius: 8px;
+        position: absolute;
+        top: 60px;
+        right: -5px;
+        z-index: 990;
+    }
+
+    header nav ul.active {
+        display: flex;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    header nav ul li a {
+        font-size: 18px;
+        padding: 10px;
+        border-bottom: 1px solid #444;
+    }
+
+    header nav ul li a:hover {
+        background-color: #444;
+        color: #00bcd4;
+    }
+
+    .main {
+        height: 90vh;
+        margin-top: 60px;
+        padding: 10% 5%;
+    }
+
+    .main h1 {
+        font-size: 2.5rem;
+    }
+
+    .main h3 {
+        font-size: 1.25rem;
+    }
+
+    #text {
+        font-size: 20px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+    }
+
+    .social-icons {
+        gap: 15px;
+        bottom: 15px;
+    }
+
+    .skills-container {
+        margin-top: 30px;
+    }
+
+    .skill-section {
+        flex: 1 1 250px;
+    }
+
+    .skill-item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .skill-item p {
+        font-size: 0.8rem;
+    }
+
+    .soft-skills-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; 
+    }
+
+    .skill-card {
+        width: 90%; 
+        max-width: 600px; 
+        padding: 20px; 
+        background-color: #f9f9f9; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: left; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto; 
+    }
+
+    .skill-card h4 {
+        text-align: center; 
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        color: #333; 
+    }
+
+    .skill-card p {
+        text-align: justify;
+        line-height: 1.8; 
+        color: #666; 
+        margin: 0; 
+    }
+
+
+    .timeline-item {
+        width: calc(100% - 40px); 
+        margin-left: 0px;
+    }
+
+    .timeline-item::before {
+        left: 10px; 
+    }
+
+    .large-text {
+        font-size: 14px;
+    }
+
+    .medium-text {
+        font-size: 12px;
+    }
+
+    .small-text {
+        font-size: 11px;
+    }
+
+    .projects-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Điều chỉnh các project cards cho màn hình nhỏ hơn */
+    .projects-container {
+        flex-direction: column; /* Chuyển các card về dạng cột */
+        align-items: center; /* Căn giữa */
+    }
+
+    .project-card {
+        width: 90%; /* Dùng 90% chiều rộng cho các card */
+        max-width: 400px; /* Giới hạn chiều rộng tối đa */
+        margin-bottom: 20px; /* Thêm khoảng cách giữa các card */
+    }
+
+    .project-image {
+        height: 150px; /* Giảm chiều cao ảnh để tiết kiệm không gian */
+    }
+
+    .project-type {
+        font-size: 1rem; /* Giảm kích thước font cho tiêu đề */
+    }
+
+    .project-name {
+        font-size: 0.9rem; /* Giảm kích thước font cho tên dự án */
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        padding: 20% 5%;
+    }
+
+    .main h1 {
+        font-size: 2rem;
+    }
+
+    .main h3 {
+        font-size: 1rem;
+    }
+
+    #text {
+        font-size: 18px;
+    }
+
+    .social-icons a {
+        font-size: 18px;
+    }
+
+    .projects-title {
+        font-size: 18px; /* Giảm font-size của tiêu đề */
+        margin-bottom: 15px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%; /* Dùng toàn bộ chiều rộng cho các card */
+        margin-bottom: 10px; /* Giảm khoảng cách giữa các card */
+    }
+
+    .project-image {
+        height: 120px; /* Giảm chiều cao ảnh */
+    }
+
+    .project-type {
+        font-size: 0.9rem; /* Giảm kích thước font */
+    }
+
+    .project-name {
+        font-size: 0.8rem; /* Giảm kích thước font */
+    }
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full màn hình */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Đảm bảo video bao phủ toàn bộ */
+    z-index: -1; /* Đặt video phía sau nội dung */
+}
+
+
+#text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #fff;
+    font-size: 24px;
+    font-weight: bold;
+    animation: blink 0.5s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.main h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.main h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.about {
+    background-color: #f9f9f9;
+    padding: 30px 30px;
+    margin-top: 20px;
+}
+
+#about {
+    scroll-margin-top: 80px;
+}
+
+.about h2 {
+    color: #c1007e;
+    text-transform: uppercase;
+    font-size: 24px;
+    border-bottom: 2px solid #c1007e;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.about-info,
+.about-text {
+    flex: 1 1 300px;
+    text-align: left;
+    gap: 10px;
+}
+
+.about-info ul li {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.about-info ul li strong {
+    width: 120px;
+    font-weight: bold;
+}
+.about-text ul {
+    list-style-type: disc; /* Gạch đầu dòng hình tròn */
+    padding-left: 20px; /* Tạo khoảng cách giữa gạch đầu dòng và nội dung */
+}
+.about-text ul li {
+    margin-bottom: 8px; /* Khoảng cách giữa các dòng */
+}
+.about-text p {
+    line-height: 1.8;
+    margin: 0px 0;
+}
+
+#skills {
+    padding: 30px 30px;
+    background-color: #f9f9f9;
+    scroll-margin-top: 80px;
+}
+
+#skills h2 {
+    color: #c1007e;
+    text-transform: uppercase;
+    font-size: 24px;
+    border-bottom: 2px solid #c1007e;
+    display: inline-block;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+#skills h3 {
+    font-size: 16px; 
+    font-weight: normal; 
+}
+
+.skill-section, .soft-skills {
+    margin-bottom: 40px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header i {
+    font-size: 24px;
+    color: #c1007e;
+    margin-right: 10px;
+}
+
+.section-header h3 {
+    font-size: 20px;
+    color: #333;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: bold;
+}
+
+.skill-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: scale(1.1);
+}
+
+.skill-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+.soft-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.skill-card {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.skill-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.skill-card h4 {
+    font-size: 18px;
+    color: #c1007e;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.skill-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
+}
+
+
+
+.timeline-item {
+    width: 80%; 
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    margin: 20px auto;
+}
+
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: -47px;
+    width: 15px;
+    height: 15px;
+    background: #c1007e;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    z-index: 1;
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.timeline-header:hover {
+    background-color: #f0f0f0;
+}
+
+.arrow {
+    font-size: 16px;
+    color: #c1007e;
+    transition: transform 0.3s ease;
+}
+
+.timeline-header.active .arrow {
+    transform: rotate(180deg);
+}
+
+.large-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #c1007e;
+}
+
+.medium-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.small-text {
+    font-size: 14px;
+    color: #666;
+}
+
+.timeline-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.timeline-item.active .timeline-details {
+    max-height: 500px; 
+}
+
+.projects-section {
+    padding: 30px 30px;
+    background-color: #f8f9fa;
+    scroll-margin-top: 80px;
+}
+
+.projects-title {
+    font-size: 24px;
+    color: #c1007e;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #c1007e;
+    display: inline-block;
+
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-type {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 15px 0 5px;
+}
+
+.project-name {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.contact-section {
+    padding: 30px 30px;
+    background-color: #f8f9fa;
+    scroll-margin-top: 80px;
+}
+
+.contact-title {
+    font-size: 24px;
+    color: #c1007e;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid #c1007e;
+    display: inline-block; 
+
+}
+
+.contact-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact-card {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 280px;
+    max-width: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contact-icon {
+
+    margin-bottom: 15px;
+}
+
+.contact-type {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-detail {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer .icons a:hover {
+    color: #00bcd4;
+}
+
+#slider {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    overflow-x: auto;
+    margin: 0 auto;
+    max-width: 100%; 
+    padding: 20px 0; 
+}
+
+.beer-slider {
+    flex-shrink: 0;
+    width: calc(33.33% - 20px); 
+    height: 300px; 
+    position: relative;
+}
+
+.beer-slider img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block;
+}
+
+
+

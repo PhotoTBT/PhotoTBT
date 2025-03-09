@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/imgs/inaya_pfp.gif">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Title -->
+    <title>PHOTO TBT | Photo Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/beerslider/dist/BeerSlider.css">
+    <!-- BeerSlider JS -->
+    <script src="https://cdn.jsdelivr.net/npm/beerslider/dist/BeerSlider.js"></script>
+
+    <style>
+        /* Bạn có thể thêm CSS tùy chỉnh vào đây nếu cần */
+    </style>
+</head>
+
+
+</html>
+
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="/assets/imgs/logo thanh.jfif" alt="Logo"> <!-- Thay thế logo bằng ảnh -->
+        </div>
+        <nav>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i> <!-- Biểu tượng hamburger từ Font Awesome -->
+            </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+
+<section class="main">
+    <video autoplay loop muted playsinline class="background-video">
+        <source src="/assets/imgs/ảnh mới.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="content">
+        <div class="logo-core">
+            <img src="/assets/imgs/logo thanh.jfif" alt="Logo">
+        </div>
+        <h1><span>PHOTO</span> <span>TBT</span></h1>
+        <h3 id="text"></h3>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/photo_tbt63/" target="_blank" style="color: #E4405F;  margin-right: 15px;">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.fiverr.com/s/ZmYkpba" target="_blank">
+                <img src="assets/imgs/Simpleicons-Team-Simple-Fiverr.512.png" alt="Fiverr Icon"
+                    style="width: 60px; height: 60px; margin-right: 15px;  margin-top: 30px;">
+            </a>
+            <a href="https://www.facebook.com/PhotoTBT63" target="_blank" style="color: #1877F2; margin-right: 15px;">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://wa.me/0353166363" target="_blank" style="color: #25D366;">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            
+        </div>
+    </div>
+</section>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const textElement = document.getElementById("text");
+            const text = "Real Estate Photo Editing Services";
+            let charIndex = 0;
+
+            function type() {
+                if (charIndex < text.length) {
+                    textElement.textContent += text.charAt(charIndex);
+                    charIndex++;
+                    setTimeout(type, 150);
+                }
+            }
+
+            type();
+        });
+    </script>
+    <section id="about" class="about">
+        <div>
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="info">
+                    <ul>
+                        <li><strong>Name:</strong> PHOTO TBT</li>
+                        <li><strong>Email:</strong> phototbt63@gmail.com</li>
+                        <li><strong>Address:</strong> Hanoi, Vietnam</li>
+                    </ul>
+                </div>
+                <!-- Thay thế <div> bằng <span> cho đường phân cách dọc -->
+                <span class="divider"></span>
+
+                <div class="about-text">
+                    <p>I Will Professionally Enhance Your Real Estate Interior and Exterior Photos!<p>
+                    <p>
+                        Attract more clients by showcasing your properties in the best possible way.
+                    </p>
+                    <p>
+                        I use advanced Photoshop techniques for every image to deliver exceptional results.
+                    </p>
+                    <h3>Photo Enhancements Include:</h3>
+                    <ul>
+                        <li>Sky replacement</li>
+                        <li>Straightening vertical and horizontal lines (level of correction depends on your photo)</li>
+                        <li>Color correction</li>
+                        <li>Exposure adjustment</li>
+                        <li>Image cropping</li>
+                        <li>Removing small unwanted objects (e.g., wires, plugs, lights). For larger objects or decluttering, please contact me first!</li>
+                        <li>Dust removal (if present)</li>
+                        <li>Enhancing details, exposure, and contrast</li>
+                        <li>Adding fresh grass</li>
+                        <li>Brightness correction</li>
+                        <li>HDR or multi-exposure blending</li>
+                    </ul>
+                    <p>
+                        If you have any questions, feel free to send me a message!
+                    </p>
+                    <p>
+                        Let me know if you need your work done quickly.
+                    </p>
+                    <p><strong>Thank you!</strong></p>
+                </div>     
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2 class="projects-title">Projects</h2>
+        <h3> HDR </h3>
+        <div id="slider">
+            <div class="beer-slider" data-beer-label="Before">
+                <img src="/assets/imgs/hdr/trc 5.jpg" alt="Before Image">
+                <div class="beer-reveal" data-beer-label="After">
+                    <img src="/assets/imgs/hdr/sau 5.jpg" alt="After Image">
+                </div>
+            </div>
+
+            <div class="beer-slider" data-beer-label="Before">
+                <img src="/assets/imgs/hdr/tr 1.jpg" alt="Before Image 2">
+                <div class="beer-reveal" data-beer-label="After">
+                    <img src="/assets/imgs/hdr/sau 1.jpg" alt="After Image 2">
+                </div>
+            </div>
+
+            <div class="beer-slider" data-beer-label="Before">
+                <img src="/assets/imgs/trước 3.jpg" alt="Before Image 3">
+                <div class="beer-reveal" data-beer-label="After">
+                    <img src="/assets/imgs/sau3.jpg" alt="After Image 3">
+                </div>
+            </div>
+
+        </div>
+        <div id="slider">
+            <div class="beer-slider" data-beer-label="Before">
+                <img src="/assets/imgs/hdr/trc 4.jpg" alt="Before Image">
+                <div class="beer-reveal" data-beer-label="After">
+                    <img src="/assets/imgs/hdr/sau 4.jpg" alt="After Image">
+                </div>
+            </div>
+
+            <div class="beer-slider" data-beer-label="Before">
+                <img src="/assets/imgs/hdr/tr 2.jpg" alt="Before Image 2">
+                <div class="beer-reveal" data-beer-label="After">
+                    <img src="/assets/imgs/hdr/sau 2.jpg" alt="After Image 2">
+                </div>
+            </div>
+
+            <div class="beer-slider" data-beer-label="Before">
+                <img src="/assets/imgs/hdr/trc 3.jpg" alt="Before Image 3">
+                <div class="beer-reveal" data-beer-label="After">
+                    <img src="/assets/imgs/hdr/sau 3.jpg" alt="After Image 3">
+                </div>
+            </div>
+
+        </div>
+
+
+        <h3> Flash </h3>
+        <div id="slider">
+            <div class="beer-slider" data-beer-label="Before">
+                <img src="/assets/imgs/trước 1.1.jpg" alt="Before Image">
+                <div class="beer-reveal" data-beer-label="After">
+                    <img src="/assets/imgs/sau 1.1.jpg" alt="After Image">
+                </div>
+            </div>
+
+            <div class="beer-slider" data-beer-label="Before">
+                <img src="/assets/imgs/trước 1.2.jpg" alt="Before Image 2">
+                <div class="beer-reveal" data-beer-label="After">
+                    <img src="/assets/imgs/sau 1.2.jpg" alt="After Image 2">
+                </div>
+            </div>
+
+            <div class="beer-slider" data-beer-label="Before">
+                <img src="/assets/imgs/trước 1.3.jpg" alt="Before Image 3">
+                <div class="beer-reveal" data-beer-label="After">
+                    <img src="/assets/imgs/sau 1.3.jpg" alt="After Image 3">
+                </div>
+            </div>
+        </div>
+
+        <div id="slider">
+            <div class="beer-slider" data-beer-label="Before">
+                <img src="/assets/imgs/flashh/tr 1.jpg" alt="Before Image">
+                <div class="beer-reveal" data-beer-label="After">
+                    <img src="/assets/imgs/flashh/sau 1.jpg" alt="After Image">
+                </div>
+            </div>
+
+            <div class="beer-slider" data-beer-label="Before">
+                <img src="/assets/imgs/flashh/tr3 .jpg" alt="Before Image 2">
+                <div class="beer-reveal" data-beer-label="After">
+                    <img src="/assets/imgs/flashh/sau 3.jpg" alt="After Image 2">
+                </div>
+            </div>
+
+            <div class="beer-slider" data-beer-label="Before">
+                <img src="/assets/imgs/flashh/tr 2.jpg" alt="Before Image 3">
+                <div class="beer-reveal" data-beer-label="After">
+                    <img src="/assets/imgs/flashh/sau 2.jpg" alt="After Image 3">
+                </div>
+            </div>
+        </div>
+
+        <h3> Twilight </h3>
+        <div id="slider">
+            <div class="beer-slider" data-beer-label="Before">
+                <img src="/assets/imgs/trước 3.1.jpg" alt="Before Image">
+                <div class="beer-reveal" data-beer-label="After">
+                    <img src="/assets/imgs/sau 3.1.jpg" alt="After Image">
+                </div>
+            </div>
+
+            <div class="beer-slider" data-beer-label="Before">
+                <img src="/assets/imgs/trước 3.2.jpg" alt="Before Image 2">
+                <div class="beer-reveal" data-beer-label="After">
+                    <img src="/assets/imgs/sau 3.2.jpg" alt="After Image 2">
+                </div>
+            </div>
+
+            <div class="beer-slider" data-beer-label="Before">
+                <img src="/assets/imgs/sau 3.3.jpg" alt="Before Image 3">
+                <div class="beer-reveal" data-beer-label="After">
+                    <img src="/assets/imgs/trước 3.3.jpg" alt="After Image 3">
+                </div>
+            </div>
+        </div>
+
+        <div id="slider">
+            <div class="beer-slider" data-beer-label="Before">
+                <img src="/assets/imgs/twllight/tr1 .jpg" alt="Before Image">
+                <div class="beer-reveal" data-beer-label="After">
+                    <img src="/assets/imgs/twllight/sau 1.jpg" alt="After Image">
+                </div>
+            </div>
+
+            <div class="beer-slider" data-beer-label="Before">
+                <img src="/assets/imgs/twllight/trc2 .jpg" alt="Before Image 2">
+                <div class="beer-reveal" data-beer-label="After">
+                    <img src="/assets/imgs/twllight/sau 2.jpg" alt="After Image 2">
+                </div>
+            </div>
+
+            <div class="beer-slider" data-beer-label="Before">
+                <img src="/assets/imgs/twllight/trc3 .jpg" alt="Before Image 3">
+                <div class="beer-reveal" data-beer-label="After">
+                    <img src="/assets/imgs/twllight/sau 3.jpg" alt="After Image 3">
+                </div>
+            </div>
+        </div>
+
+        <h3> Day to dusk </h3>
+        <div id="slider">
+            <div class="beer-slider" data-beer-label="Before">
+                <img src="/assets/imgs/Day to dusk/tr 2.jpg" alt="Before Image">
+                <div class="beer-reveal" data-beer-label="After">
+                    <img src="/assets/imgs/Day to dusk/sau 2.jpg" alt="After Image">
+                </div>
+            </div>
+
+            <div class="beer-slider" data-beer-label="Before">
+                <img src="/assets/imgs/Day to dusk/tr 3.jpg" alt="Before Image 2">
+                <div class="beer-reveal" data-beer-label="After">
+                    <img src="/assets/imgs/Day to dusk/sau 3.jpg" alt="After Image 2">
+                </div>
+            </div>
+
+            <div class="beer-slider" data-beer-label="Before">
+                <img src="/assets/imgs/Day to dusk/tr 5.jpg" alt="Before Image 3">
+                <div class="beer-reveal" data-beer-label="After">
+                    <img src="/assets/imgs/Day to dusk/sau 5.jpg" alt="After Image 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sliders = document.querySelectorAll(".beer-slider");
+            sliders.forEach(slider => new BeerSlider(slider));
+        });
+    </script>
+
+
+    <section id="skills" class="skills">
+
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <!-- Frontend Section -->
+            <div class="skill-section">
+                <div class="section-header">
+                    <i class="fas fa-laptop"></i>
+                    <h3>Graphics & Design</h3>
+                </div>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <img src="/assets/imgs/photoshop logo.png" width="50" height="50" alt="JavaScript Icon">
+                        <p>Adobe Photoshop</p>
+                    </div>
+
+                    <div class="skill-item">
+                        <img src="/assets/imgs/Frrr.png" width="50" height="50" alt="JavaScript Icon">
+                        <p>Adobe Fresco</p>
+                    </div>
+
+                    <div class="skill-item">
+                        <img src="/assets/imgs/Lr.png" width="50" height="50" alt="JavaScript Icon">
+                        <p>Adobe Lightroom</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Soft Skills Section -->
+            <div class="soft-skills">
+                <div class="section-header">
+                    <i class="fas fa-users"></i>
+                    <h3>Core skills</h3>
+                </div>
+                <div class="soft-skills-container">
+                    <div class="skill-card">
+                        <h4>Photo Editing Software Proficiency</h4>
+                        <p>Expertise in Adobe Photoshop, Lightroom, and other image editing tools to enhance real estate photos.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Sky Replacement </h4>
+                        <p>Ability to replace dull skies with vibrant ones to enhance property appeal.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Batch Processing & Automation</h4>
+                        <p>Efficiency in editing large volumes of images quickly while maintaining quality.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h4>Perspective & Lens Correction</h4>
+                        <p>Skill in straightening verticals and fixing distortions to ensure realistic and professional images.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h4>Communication & Client Collaboration </h4>
+                        <p>Ability to understand client requirements and deliver edits that align with their vision.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h4>HDR Blending </h4>
+                        <p>Experience in merging multiple exposures to create high-dynamic-range (HDR) images for balanced lighting.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Image Composition & Framing </h4>
+                        <p>Understanding of real estate photography composition for visually appealing presentations.</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        function toggleDetails(element) {
+            const parent = element.parentElement;
+            parent.classList.toggle('active');
+        }
+    </script>
+
+
+
+    <section id="contact" class="contact-section">
+        <h2 class="contact-title">Contact</h2>
+        <p class="contact-subtitle">Contact me, maybe</p>
+        <div class="contact-container">
+            <div class="contact-card">
+                <i class="fa-solid fa-envelope contact-icon" style="font-size: 24px; color: rgb(204, 0, 95);"></i>
+                <h3 class="contact-type">Email</h3>
+                <p class="contact-detail">phototbt63@gmail.com</p>
+            </div>
+            <div class="contact-card">
+                <i class="fa-solid fa-location-dot" style="font-size: 24px; color: rgb(204, 0, 95);"></i>
+                <h3 class="contact-type">Location</h3>
+                <p class="contact-detail">Hanoi, Vietnam</p>
+            </div>
+            <div class="contact-card">
+                <i class="fa-brands fa-instagram" style="font-size: 24px; color: rgb(204, 0, 95);"></i>
+                <h3 class="contact-type">Instagram</h3>
+                <p class="contact-detail">photo_tbt63</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>PHOTO TBT</h2>
+            <p>Photo Editor</p>
+            <p>© All rights reserved. Template designed by Nguyen.</p>
+            <div class="icons">
+                <a href="https://www.instagram.com/photo_tbt63/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.fiverr.com/s/ZmYkpba" target="_blank">
+                    <img src="assets/imgs/Simpleicons-Team-Simple-Fiverr.512.png" alt="Fiverr Icon"
+                        style="width: 32px; height: 32px; border-radius: 20%;">
+                </a>
+                <a href="https://www.facebook.com/PhotoTBT63" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
